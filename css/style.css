@@ -22,29 +22,22 @@ body {
     rgba(54, 77, 204, 1) 0%,
     rgba(25, 40, 120, 1) 100%
   );
-  /*
-  background-image: url('https://images.unsplash.com/photo-1588811752802-af42bad9f378?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=282&q=80');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  background-color: black;
-  background-attachment: fixed;*/
   color: black;
 }
 
-.profile {
+header.profile {
   margin-top: 2rem;
   text-align: center;
 }
 
-.avatar {
+header.profile .avatar {
   width: 7rem;
   border-radius: 50%;
   border: 2px solid white;
   box-shadow: 0px 2px 4px 2px white;
 }
 
-header h1 {
+header.profile h1 {
   font-family: 'Montserrat', cursive;
   font-weight: normal;
   font-size: 3rem;
@@ -52,19 +45,20 @@ header h1 {
   color: white;
 }
 
-header h2 {
+header.profile h2 {
   font-size: 1rem;
   font-weight: normal;
   color: white;
 }
 
-section .social {
+section ul.social {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-
-  list-style: none;
+  max-width: 500px;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: auto;
 }
 
 .social li a img {
@@ -74,17 +68,27 @@ section .social {
 .links-list {
   display: flex;
   flex-direction: column;
+  margin: auto;
   max-width: 500px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .links-list li {
-  color: rgba(25, 40, 120, 1);
   border-radius: 4px;
   padding: 1rem;
   font-size: 1rem;
   margin: 1rem;
   background-color: white;
+}
+
+.links-list li.course {
+  background-color: #212529;
+  display: flex;
+  align-items: center;
+}
+.links-list li.course div,
+.links-list li.course div span {
+  color: white;
 }
 
 .links-list li a {
